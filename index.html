@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 羽球教練</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">AI 羽球教練</h1>
+        <p class="subtitle">Your Exclusive Badminton Coach</p>
+        <div class="image-box">
+            <img src="https://us.123rf.com/450wm/kluva/kluva2108/kluva210800003/173099123-jugador-de-bádminton-profesional-geométrico-poligonal-sobre-fondo-polivinílico-bajo-colorido.jpg?ver=6" alt="羽球相關圖片">
+        </div>
+        <button class="btn login-btn" onclick="redirectTo('login')">登入 Login</button>
+        <button class="btn sign-up-btn" onclick="redirectTo('signup')">註冊 Sign Up</button>
+    </div>
+
+    <!-- 提示框和遮罩 -->
+    <div id="intro-modal" class="modal">
+        <div class="modal-overlay" onclick="closeModal()"></div>
+        <div class="modal-content">
+            <h2 class="modal-title">網站介紹：</h2>
+            <div class="modal-body">
+                <p>不論是什麼運動項目，基本動作都非常重要，擁有扎實的基本動作才能提升您在運動場上的表現，羽球當然也不例外，但不是所有羽球愛好者都有一位教練在旁指導，提醒自己哪些動作細節沒做好，導致很多人都是習慣用錯誤的姿勢打球而難以改善，現在只要使用我們的網站，除了可以透過文字和影片來學習羽球的基本動作外，還可以上傳您的擊球影片進行分析進而了解自己哪些動作沒做好可以加以練習改善，讓您擁有正確的基本動作。</p>
+                <p>以下是此網站主要功能的文字介紹：</p>
+                <h3>羽球擊球動作教學：　</h3>
+                <p>您可以選擇自己想要學習的動作透過文字動作教學，先了解各個動作的細節及要點，再搭配標準動作的示範影片來學習羽球的六大基本動作。</p>
+                <h3>羽球動作偵測：</h3>
+                <p>此功能可以選擇自己想要偵測的擊球動作並上傳您的擊球影片，就能快速得到評分以及評論來了解和改善您的打球姿勢。</p>
+                <h3>動作偵測紀錄：</h3>
+                <p>此功能可以記錄您每次上傳影片的結果分析及數據，以利讓您了解自己的基本動作是否有進步。</p>
+            </div>
+            <button class="close-btn" onclick="closeModal()">關閉</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
